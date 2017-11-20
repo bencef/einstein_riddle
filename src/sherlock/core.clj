@@ -38,6 +38,7 @@
     (houseo h3)
     (houseo h4)
     (houseo h5)
+    ;; TODO house numbers are distinct
     (partiale q {:occupant :brit :color :red})
     (partiale q {:occupant :swede :pet :dog})
     (partiale q {:occupant :dane :drink :tea})
@@ -48,4 +49,6 @@
       (partiale q {:number n2 :color :white}))
     (partiale q {:color :green :drink :coffee})
     (partiale q {:cigarette :pall-mall :pet :bird})
-    (partiale q {:color :yellow :cigarette :dunhill})))
+    (partiale q {:color :yellow :cigarette :dunhill})
+    (partiale q {:number 3 :drink :milk})
+    (partiale q {:occupant :norwegian :number 1})))
