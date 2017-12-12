@@ -33,11 +33,7 @@
 (run 1 [q]
   (fresh [h1 h2 h3 h4 h5]
     (== q [h1 h2 h3 h4 h5])
-    (houseo h1)
-    (houseo h2)
-    (houseo h3)
-    (houseo h4)
-    (houseo h5)
+    (everyg houseo q)
     ;; TODO house numbers are distinct
     (partiale q {:occupant :brit :color :red})
     (partiale q {:occupant :swede :pet :dog})
